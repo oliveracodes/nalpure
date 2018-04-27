@@ -1,0 +1,209 @@
+::-moz-selection {
+  color: #fff;
+  background: #2BCBBA;
+}
+
+::selection {
+  color: #fff;
+  background: #2BCBBA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html,
+body {
+  overflow-x: hidden;
+  cursor: default; }
+
+em {
+  color: #2BCBBA; }
+
+strong {
+  color: #00A292; }
+
+.navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: 0.95;
+  z-index: 9999;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  .navbar img {
+    width: 75%;
+    height: auto; }
+
+.navbar.shrink {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 2px #2BCBBA;
+          box-shadow: 0px 2px 2px #2BCBBA;
+  opacity: 0.85; }
+  .navbar.shrink img {
+    width: 75%;
+    height: auto; }
+
+nav .nav-item a:link,
+nav .nav-item a:visited {
+  font-size: 120%;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s; }
+
+nav .nav-item a:hover,
+nav .nav-item a:active {
+  border-bottom: 2px solid #F9F871; }
+
+#header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 203, 186, 0.4)), to(rgba(43, 203, 186, 0.4))), url("../img/waterfall.jpeg");
+  background-image: linear-gradient(rgba(43, 203, 186, 0.4), rgba(43, 203, 186, 0.4)), url("../img/waterfall.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  #header h1 {
+    margin-bottom: -70px;
+    margin-right: 30px; }
+  #header .list-group-item {
+    background-color: transparent !important;
+    display: list-item;
+    border: none !important;
+    font-size: 90%;
+    margin-left: -20px; }
+
+.btn-sub {
+  cursor: pointer;
+}
+
+#offers .display-4 {
+  color: #00A292; }
+
+#guarantee .fa {
+  color: #00A292; }
+
+#guarantee img {
+  width: auto;
+  height: 100%; }
+
+#tours {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/city.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/city.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  background-attachment: fixed; }
+
+#testimonials .display-4 {
+  color: #00A292; }
+
+#testimonials blockquote {
+  padding: 5%;
+  font-style: italic;
+  line-height: 145%;
+  margin-top: 10px;
+  border-left: none; }
+
+#testimonials blockquote:before {
+  content: "\f10d";
+  font-family: FontAwesome;
+  float: left;
+  margin-right: 10px;
+  color: #00A292; }
+
+#contact img {
+  width: 100%;
+  height: auto; }
+
+#contact .blockquote {
+  border-color: #FC7CE7;
+  font-size: 100%; }
+
+#footer {
+  font-size: 120%; }
+  #footer .social-links {
+    list-style: none; }
+  #footer .social-links li {
+    display: inline-block;
+    margin-right: 20px; }
+  #footer .social-links li:last-child {
+    margin-right: 0; }
+  #footer .made-by {
+    color: #2BCBBA; }
+
+.back-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+  display: none;
+  text-decoration: none;
+  color: #FC7CE7; }
+
+.back-to-top i {
+  font-size: 300%; }
+
+/* Big tablets (widths smaller than the 1140px row): from 1024px to 1200px */
+/* Small tablets in portrait mode to big tablets: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  nav .container {
+    width: 100%; }
+  #guarantee .list-group-item {
+    font-size: 90%; }
+  #guarantee .fa {
+    color: #00A292; }
+  #guarantee img {
+    width: auto;
+    height: 90%; }
+  #testimonials blockquote {
+    padding: 2%;
+    line-height: 125%; }
+  #contact .display-4 {
+    font-size: 300%; }
+  #contact img {
+    width: 90%;
+    height: auto; } }
+
+/* Larger phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  nav .container {
+    width: 100%; }
+  #contact .display-4 {
+    font-size: 280%; }
+  #contact img {
+    width: 50%;
+    height: auto; }
+  .display-1 {
+    font-size: 500%; }
+  .display-2 {
+    font-size: 400%; }
+  .display-4 {
+    font-size: 280%; } }
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  nav .container {
+    width: 100%; }
+  #header h1 {
+    margin: 5px 0;
+    font-size: 400%;
+    text-align: left !important; }
+  #contact .display-4 {
+    font-size: 200%; }
+  #contact img {
+    width: 75%;
+    height: auto; }
+  .display-1 {
+    font-size: 400%; }
+  .display-2 {
+    font-size: 300%; }
+  .display-4 {
+    font-size: 200%; }
+  .lead {
+    font-size: 100%; } }
